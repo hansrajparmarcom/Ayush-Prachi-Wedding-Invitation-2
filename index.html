@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush & Prachi — Wedding Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-locked">
+
+  <!-- Background music: "Kaahe Mose" piano cover by Ron -->
+  <audio id="bgMusic" src="assets/Music/music.mp3" loop preload="auto"></audio>
+
+  <!-- ═══════════ ENTRY GATE ═══════════ -->
+  <div class="gate" id="gate">
+    <div class="gate__inner">
+      <p class="gate__blessing">॥श्री गणेशाय नमः॥</p>
+      <div class="monogram">
+        <span>A</span><em>&amp;</em><span>P</span>
+      </div>
+      <p class="gate__sub">You are cordially invited</p>
+      <button class="gate__btn" id="enterBtn" type="button">Tap to Enter</button>
+      <p class="gate__hint">Best experienced with sound on</p>
+    </div>
+  </div>
+
+  <!-- Floating music toggle -->
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle music">
+    <span class="bars"><i></i><i></i><i></i><i></i></span>
+  </button>
+
+  <main>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" data-parallax></div>
+      <div class="hero__veil"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal" style="--i:0"><span class="nowrap">Two souls ·</span> <span class="nowrap">Two families ·</span> <span class="nowrap">One journey</span></p>
+        <h1 class="hero__names reveal" style="--i:1">
+          Ayush
+          <span class="script">and</span>
+          Prachi
+        </h1>
+        <p class="hero__tag reveal" style="--i:2">A sacred beginning to a beautiful forever</p>
+        <div class="divider reveal" style="--i:3"><span>✦</span></div>
+        <p class="hero__date reveal" style="--i:4">09 — 11 December 2026<span class="hero__sep"> · </span><span class="hero__city">Mumbai</span></p>
+      </div>
+
+      <a href="#story" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ═══════════ STORY / VERSE ═══════════ -->
+    <section class="story paper" id="story">
+      <div class="container story__layout">
+        <figure class="story__photo story__photo--left reveal">
+          <img src="assets/Images/Left.jpg" alt="Ayush kissing Prachi's hand" loading="lazy" />
+        </figure>
+
+        <div class="story__text">
+          <p class="eyebrow reveal">Our Story</p>
+          <h2 class="title reveal">Written in the Stars</h2>
+          <div class="divider reveal"><span>✦</span></div>
+          <div class="verse">
+            <p class="reveal" style="--i:0">Nothing dramatic happened,<br />no fate-struck night.</p>
+            <p class="reveal" style="--i:1">Just two people slowly discovering<br />that they enjoyed talking to each other.</p>
+            <p class="reveal" style="--i:2">Messages became phone calls,<br />phone calls became late-night conversations.</p>
+            <p class="reveal" style="--i:3">And somewhere along the way,<br />we stopped being two strangers</p>
+            <p class="reveal highlight" style="--i:4">and started choosing each other.</p>
+          </div>
+        </div>
+
+        <figure class="story__photo story__photo--right reveal">
+          <img src="assets/Images/Right-2.jpg" alt="Ayush and Prachi walking hand in hand" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═══════════ CELEBRATIONS ═══════════ -->
+    <section class="events" id="events">
+      <div class="container">
+        <p class="eyebrow reveal">Different rituals · One beautiful journey</p>
+        <h2 class="title reveal">The Celebrations</h2>
+        <div class="divider reveal"><span>✦</span></div>
+
+        <div class="events__grid">
+
+          <article class="event reveal" style="--i:0; --img: url('assets/Images/Mehendi-web.jpg'); --pos: center 70%;">
+            <div class="event__media"></div>
+            <div class="event__card">
+              <div class="event__date"><b>09</b><span>Dec</span><small>2026</small></div>
+              <h3>Mehendi</h3>
+              <p class="event__time">04:00 PM onwards</p>
+              <p class="event__place">305, Grishma Heights, MG Road, Kandivali West, Mumbai</p>
+              <p class="event__dress">Dress code: Shades of green</p>
+            </div>
+          </article>
+
+          <article class="event reveal" style="--i:1; --img: url('assets/Images/Haldi.jpg'); --pos: 60% center;">
+            <div class="event__media"></div>
+            <div class="event__card">
+              <div class="event__date"><b>10</b><span>Dec</span><small>2026</small></div>
+              <h3>Haldi</h3>
+              <p class="event__time">12:00 PM onwards</p>
+              <p class="event__place">Maxus Mall, Bhayander</p>
+              <p class="event__dress">Dress code: Yellow</p>
+            </div>
+          </article>
+
+          <article class="event reveal" style="--i:2; --img: url('assets/Images/sangeet.png');">
+            <div class="event__media"></div>
+            <div class="event__card">
+              <div class="event__date"><b>10</b><span>Dec</span><small>2026</small></div>
+              <h3>Sangeet</h3>
+              <p class="event__time">06:30 PM onwards</p>
+              <p class="event__place">Maxus Mall, Bhayander</p>
+            </div>
+          </article>
+
+          <article class="event reveal" style="--i:3; --img: url('assets/Images/Wedding.jpg'); --size: auto 155%; --pos: 55% 100%; --flip: -1;">
+            <div class="event__media"></div>
+            <div class="event__card">
+              <div class="event__date"><b>11</b><span>Dec</span><small>2026</small></div>
+              <h3>Wedding</h3>
+              <p class="event__time">Baraat 5:00 PM · Pheras 7:00 PM</p>
+              <p class="event__place">Maxus Mall, Bhayander</p>
+              <p class="event__dress">Dress code: Traditional</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ COUPLE ═══════════ -->
+    <section class="couple paper" id="couple">
+      <div class="container couple__grid">
+        <div class="person reveal" style="--i:0">
+          <p class="person__heading">Proud Son of</p>
+          <div class="person__photo" role="img" aria-label="Mr. and Mrs. Shah" style="--img: url('assets/Images/Shah-web.jpg'); --size: 130% auto; --pos: 63% 5%;"></div>
+          <h3>Tejasbhai Shah and Amiben Shah</h3>
+        </div>
+
+        <div class="couple__and reveal" style="--i:1">&amp;</div>
+
+        <div class="person reveal" style="--i:2">
+          <p class="person__heading">Proud Daughter of</p>
+          <div class="person__photo" role="img" aria-label="Mr. and Mrs. Bhavsar" style="--img: url('assets/Images/Bhavsar-web.jpg'); --pos: center 20%;"></div>
+          <h3>Rakeshbhai Bhavsar and Leenaben Bhavsar</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ VENUE / COUNTDOWN ═══════════ -->
+    <section class="venue" id="venue">
+      <div class="venue__bg" data-parallax></div>
+      <div class="venue__veil"></div>
+      <div class="container narrow venue__content">
+        <p class="eyebrow reveal">Save the Date</p>
+        <h2 class="title reveal">11 · 12 · 2026</h2>
+        <div class="countdown reveal" id="countdown" data-date="2026-12-11T19:00:00+05:30">
+          <div><b data-unit="days">00</b><span>Days</span></div>
+          <div><b data-unit="hours">00</b><span>Hours</span></div>
+          <div><b data-unit="minutes">00</b><span>Minutes</span></div>
+          <div><b data-unit="seconds">00</b><span>Seconds</span></div>
+        </div>
+        <p class="venue__addr reveal">Maxus Banquet Hall, Maxus Mall, Bhayander West </p>
+        <a class="btn reveal" href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwiguoX6goWXAxUAAAAAHQAAAAAQDA..i&fvr=1&pvq=Cg0vZy8xMWM3MnFqNnlwIhgKEm1heHVzIGJhbnF1ZXQgaGFsbBACGAM&lqi=CiFtYXh1cyBiYW5xdWV0IGhhbGwgYmhheWFuZGFyIHdlc3RItbegq5yrgIAIWjkQABABEAIYABgDGAQiIW1heHVzIGJhbnF1ZXQgaGFsbCBiaGF5YW5kYXIgd2VzdCoICAIQABABEAKSAQxiYW5xdWV0X2hhbGw&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KWfhi2PMsec7Mbc5YT_UnehA&daddr=18/19,+Maxus+Mall+Rd,+opp.+Sada+Satya+Apt,+behind+Maxus+Mall,+Bhayandar,+Padmavati+Nagar,+Bhayandar+West,+Mumbai,+Mira+Bhayandar,+Maharashtra+401101" target="_blank" rel="noopener">View on Map</a>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer paper">
+      <p class="script reveal">With love &amp; blessings</p>
+      <p class="footer__families reveal">The Shah &amp; Bhavsar Families</p>
+      <p class="footer__note reveal">Your presence is the greatest gift</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
